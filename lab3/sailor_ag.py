@@ -15,8 +15,8 @@ import sailor_funct as sf
 
 # Parameters
 number_of_sumulations = 1000
-number_of_individuals = 50
-number_of_episodes_for_eval = 20
+number_of_individuals = 20
+number_of_episodes_for_eval = 50
 
 p_cross = 0.9
 p_mut = 0.2  # stronger mutation
@@ -30,7 +30,7 @@ file_name = 'map_easy.txt'
 #file_name = 'map_big.txt'
 #file_name = 'map_spiral.txt'
 
-gamma = 0.5
+gamma = 1.05
 
 number_of_epochs = number_of_sumulations // (number_of_individuals * number_of_episodes_for_eval)
 reward_map = sf.load_data(file_name)
@@ -38,7 +38,7 @@ num_of_rows, num_of_columns = reward_map.shape
 num_of_steps_max = int(2.5 * (num_of_rows + num_of_columns))
 
 # Initialize population: prefer going right and down
-Popul = np.random.choice([1, 2, 4], size=(number_of_individuals, num_of_rows, num_of_columns), p=[0.5, 0.2, 0.3])
+Popul = np.random.choice([1, 2,3, 4], size=(number_of_individuals, num_of_rows, num_of_columns), p=[0.4, 0.2,0.1, 0.3])
 
 
 def reproduction(Popul, fitnesses):
