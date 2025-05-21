@@ -9,7 +9,6 @@ This repository contains a collection of Artificial Intelligence (AI) lab exerci
 - [Reinforcement Learning](#reinforcement-learning)
 - [Neural Networks](#neural-networks)
 - [Upcoming: Decision Trees](#upcoming-decision-trees)
-- 
 ---
 
 ## Simulated Annealing
