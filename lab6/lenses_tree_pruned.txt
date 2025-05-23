@@ -1,0 +1,5 @@
+node with attribute a4
+--- a4 == 1 -> class 1
+--- a4 == 2 -> node with attribute a3
+------ a3 == 1 -> class 2
+------ a3 == 2 -> class 3
