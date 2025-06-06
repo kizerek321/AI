@@ -145,4 +145,4 @@ if __name__ == '__main__':
     labels = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0]
     svm_on_points(X, labels)
     perceptron_on_points(X, labels)
-    decision_tree_on_points(X, labels, max_depth=2)
+    clf = decision_tree_on_points(X, labels, max_depth=2)
